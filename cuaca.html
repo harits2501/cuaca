@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MUFI Weather</title>
+
+    <link rel="stylesheet" href="cuaca.css">
+</head>
+
+<body>
+
+    <!-- Awan dekorasi -->
+    <div class="cloud cloud1">☁️</div>
+    <div class="cloud cloud2">☁️</div>
+    <div class="cloud cloud3">☁️</div>
+
+    <div class="weather-container">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                🌤️ <span>MUFI</span> Weather
+            </div>
+
+            <p class="subtitle">
+                Informasi cuaca sederhana dan cepat
+            </p>
+        </header>
+
+        <!-- Pencarian -->
+        <div class="search-box">
+
+            <select id="kota">
+                <option value="">Pilih Kota</option>
+                <option value="medan">Medan</option>
+                <option value="jakarta">Jakarta</option>
+                <option value="bandung">Bandung</option>
+                <option value="surabaya">Surabaya</option>
+                <option value="yogyakarta">Yogyakarta</option>
+            </select>
+
+            <button onclick="cekCuaca()">
+                🔍 Cek Cuaca
+            </button>
+
+        </div>
+
+        <!-- Hasil Cuaca -->
+        <div id="hasil" class="weather-card">
+
+            <div class="welcome">
+
+                <div class="big-icon">
+                    🌤️
+                </div>
+
+                <h2>Selamat Datang!</h2>
+
+                <p>
+                    Pilih kota untuk melihat informasi cuaca.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            © 2026 MUFI Weather | Project JavaScript
+        </footer>
+
+    </div>
+
+    <script src="cuaca.js"></script>
+
+</body>
+<button class="back-button" onclick="kembali()">
+    ← Kembali
+</button>
+</html>
